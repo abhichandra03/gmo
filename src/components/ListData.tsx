@@ -6,7 +6,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Collapse from '@mui/material/Collapse';
 import Checkbox from '@mui/material/Checkbox';
 import {AiFillPlusCircle, AiFillMinusCircle} from "react-icons/ai"
-import React, {useState } from 'react'
+import  {useState } from 'react'
 
 interface ListProps {
     department:string,
@@ -31,12 +31,6 @@ const Items : ListProps[] = [
   	]
 	}
   ]
-
-  interface TickedItems {
-	id:number,
-	name:string,
-  }
-
 
 const ListData = () => {
 	const [isChecked, setIsChecked] = useState<String[]>([""])
